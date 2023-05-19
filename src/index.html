@@ -1,29 +1,32 @@
 <html lang="en">
-<base href="/" />
+  <base href="/" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <title>Canvas</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-        canvas {
-            display: block;
-        }
+      canvas {
+        display: block;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <canvas id="canvas"></canvas>
+    <img
+      id="img"
+      src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gardenia.net%2Fplant-variety%2Fosteospermum-african-daisy&psig=AOvVaw2yV3j8I8dM8Q6F5VU4VSeM&ust=1684574555095000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPD-grKHgf8CFQAAAAAdAAAAABAe"
+    />
     <% for (var js in htmlWebpackPlugin.files.js) { %>
-        <script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
-        <% } %>
-</body>
-
+    <script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+    <% } %>
+  </body>
 </html>
